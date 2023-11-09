@@ -8,19 +8,21 @@ html, body {
 .hamburger {
     cursor: pointer;
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: space-around;
     height: 2rem;
     width: 2rem;
-    padding-top: 16px;
-    padding-left: 16px;
+    padding-top: 24px;
+    padding-left: 24px;
 }
 
 .bar {
-height: 3px;
-width: 100%;
-background-color: #333;
-transition: all 0.3s;
+    height: 3px;
+    width: 100%;
+    border-radius: 10%; /* これが端を丸くする */
+    background-color: #333;
+    transition: all 0.3s;
 }
 
 .menu {
@@ -29,13 +31,12 @@ transition: all 0.3s;
     text-align: left;
     list-style: none;
     position: fixed;
-    width: 100vw; /* ビューポートの幅全体 */
-    height: 100vh; /* ビューポートの高さ全体 */
-    background-color: rgba(255, 255, 255); /* 半透明の背景色 の場合はrgba(255, 255, 255, 0.9); */
-    z-index: 1000; /* 他の要素より上に表示 */
+    background-color: rgb(255, 254, 254); /* 半透明の背景色 の場合はrgba(255, 255, 255, 0.9); */
+    z-index: 10; /* 他の要素より上に表示 */
     top: 0;
     left: 0;
     width: 250px;
+    height: 100vh; 
     transform: translate(-100%);
     transition: transform 0.5s ease;
 }
@@ -51,6 +52,25 @@ transition: all 0.3s;
     padding-left: 2rem;
     text-decoration: none;
     color: black;
+}
+
+
+.right-side {
+    background-color: rgb(255, 255, 255, 0.9);
+    padding-bottom: 12px;
+    cursor: pointer;
+    display: flex;  /* 右寄せにする */
+    justify-content: flex-end;  /* センタリングされた高さ */
+    align-items: center;
+    flex-grow: 1;  /* 利用可能な余白を使って拡大する */
+}
+
+.right-side img{
+    margin-top: 0; 
+    width: 32px; /* 画像の幅 */
+    height: auto; /* 画像の高さは自動で調整 */
+    padding-top: 24px;
+    padding-right: 24px;
 }
 
 /* 以下、ハンバーガーメニュー開閉時のアニメーション等のスタイルを追加 */
