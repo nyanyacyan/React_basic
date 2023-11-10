@@ -39,7 +39,7 @@ const Header = () => {
                 <li><a href="#skills">スキル</a></li>
                 <li><a href="#portfolio">ポートフォリオ</a></li>
                 <li><a href="#contact">連絡先</a></li>
-                <li><a href="#language">English</a></li>
+                {/* <li><a href="#language">English</a></li> */}
             </ul>
         </header>
     );
