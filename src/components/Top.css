@@ -1,1 +1,28 @@
 /* Top.css */
+.topcontainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.sky {
+    margin: 0;
+    padding: 0;
+}
+
+.sky img {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.sky h1 {
+    position: absolute;
+    font-size: 28px;
+    font-family: "Arial", "メイリオ";
+    color: #00000095;
+    top: 20%; /* 要素の中央に配置 */
+    left: 50%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+    z-index: 10; 
+}
