@@ -21,7 +21,8 @@ const Top = () => {
     return(
         <div className="topcontainer">
             <div className="sky">
-                <img src="バック.jpg" alt="背景"/>
+                <img src="バック.jpg" alt="背景" className="backboard"/>
+                <img src="メインキャラ背景透過（キャラのみ）.png" alt="icon" className="icon"/>
                 <h1>
                     にゃにゃちゃん's　Lab
                 </h1>

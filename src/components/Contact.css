@@ -1,1 +1,34 @@
 /* Contact.css */
+.Contact {
+    position: relative;
+}
+
+.Contact img {
+    width: 100%;
+    height: 100vh;
+}
+
+.Contact h2 {
+    position: absolute;
+    font-size: 24px;
+    font-family: "Arial", "メイリオ";
+    color: #00000095;
+    top: 35%; /* 要素の中央に配置 */
+    left: 50%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+    z-index: 10; 
+}
+
+.Contact p {
+    width: 80%;
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Arial", "メイリオ";
+    color: #00000095;
+    top: 55%; /* 要素の中央に配置 */
+    left: 50%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+    z-index: 10; 
+    line-height: 1.8;
+}
