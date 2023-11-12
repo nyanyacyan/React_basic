@@ -23,10 +23,8 @@ const Contact = () => {
                 <p>
                     最後までご覧いただき、ありがとうございました。このサイトを通して私のことを少しでも知っていただけたのなら嬉しいです。もしこのサイトのことや私についてコメントなどがありましたら、お気軽に下記のフォームをご利用ください。
                 </p>
-            </div>
 
-            <div className="nameInput">
-                <form>
+                <div className="statusInput">
                     <div className="nameInput">
                         <input 
                             name="name"
@@ -46,15 +44,9 @@ const Contact = () => {
                     </div>
 
                     <div className="comment">
-                        <input 
-                            name="comment"
-                            onChange={handleUser}
-                            type="text"
-                            placeholder="comment"
-                        />
+                        <textarea className="comment" rows="4" placeholder="comment"></textarea>
                     </div>
-                </form>
-
+                </div>
             </div>
         </div>
     );
