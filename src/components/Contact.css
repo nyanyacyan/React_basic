@@ -56,6 +56,13 @@
     width: 300px;
     height: 40px;
     font-size: 16px;
+    border: none;
+    border-bottom: 3px solid gainsboro;
+}
+
+.commentrow {
+    border: none;
+    border-bottom: 3px solid gainsboro;
 }
 
 .comment textarea{
