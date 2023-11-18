@@ -4,7 +4,7 @@ import './Profile.css';
 
 const Profile = () => {
     return(
-        <div className="aboutMe">
+        <div id="profile" className="aboutMe">
             <div className="mainProfile">
                 <h2>
                     Profile

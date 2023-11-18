@@ -4,7 +4,7 @@ import './Skill.css';
 
 const Skill = () => {
     return(
-        <div className="Skill">
+        <div id="skills" className="Skill">
             <h2>
                 My Skill Set
             </h2>

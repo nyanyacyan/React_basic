@@ -14,8 +14,12 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleLinkClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
-        <header className="header">
+        <header id="top" className="header">
             <nav className="navbar">
                 <div className="left-side">
                     {/* {ハンバーガーアイコン} */}
@@ -33,12 +37,12 @@ const Header = () => {
             
             {/* {メニューアイコン} */}
             <ul ref={menuRef} className={isMenuOpen ? 'menu open' : 'menu'}>
-                <li><a href="#top">トップ</a></li>
-                <li><a href="#about">このサイトについて</a></li>
-                <li><a href="#profile">プロフィール</a></li>
-                <li><a href="#skills">スキル</a></li>
-                <li><a href="#portfolio">ポートフォリオ</a></li>
-                <li><a href="#contact">連絡先</a></li>
+                <li><a href="#toppage" onClick={handleLinkClick}>トップ</a></li>
+                <li><a href="#about" onClick={handleLinkClick}>このサイトについて</a></li>
+                <li><a href="#profile" onClick={handleLinkClick}>プロフィール</a></li>
+                <li><a href="#skills" onClick={handleLinkClick}>スキル</a></li>
+                <li><a href="#portfolio" onClick={handleLinkClick}>ポートフォリオ</a></li>
+                <li><a href="#contact" onClick={handleLinkClick}>連絡先</a></li>
                 {/* <li><a href="#language">English</a></li> */}
             </ul>
         </header>

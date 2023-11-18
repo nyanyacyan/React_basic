@@ -4,7 +4,7 @@ import './invite.css';
 
 const Invite = () => {
     return(
-        <div className="aboutThisSite">
+        <div id="about" className="aboutThisSite">
             <img src="壁紙.jpg" alt="壁紙"/>
             <h2>
                 このサイトについて

@@ -10,10 +10,10 @@
 
 .Contact h2 {
     position: absolute;
-    font-size: 24px;
+    font-size: 28px;
     font-family: "Arial", "メイリオ";
     color: #00000095;
-    top: 15%; /* 要素の中央に配置 */
+    top: 12%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
     z-index: 10; 
@@ -26,7 +26,7 @@
     font-size: 16px;
     font-family: "Arial", "メイリオ";
     color: #00000095;
-    top: 35%; /* 要素の中央に配置 */
+    top: 30%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
     z-index: 10; 
@@ -41,7 +41,7 @@
     flex-direction: column; /* 要素を縦方向に配置 */
     justify-content: space-between; /* 要素間のスペースを均等に分配 */
     height: 250px; /* 必要に応じて高さを調整 */
-    height: 250px;
+    height: 330px;
     left: 50%; /* 要素を水平方向の中央に配置 */
     top: 70%; /* 要素を垂直方向の中央に配置 */
     transform: translate(-50%, -50%);
@@ -49,15 +49,18 @@
 
 .nameInput, .EmailInput, .comment {
     width: 100%;
+    margin-bottom: 15px; 
 }
 
 
 .nameInput input, .EmailInput input {
     width: 300px;
-    height: 40px;
+    height: 30px;
     font-size: 16px;
+    font-family: "Arial", "メイリオ";
     border: none;
     border-bottom: 3px solid gainsboro;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .commentrow {
@@ -67,6 +70,66 @@
 
 .comment textarea{
     width: 300px;
-    height: 100px;
+    height: 50px;
+    font-family: "Arial", "メイリオ";
     font-size: 16px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.statusInput .name-error-message {
+    color: rgba(255, 0, 0, 0.800);
+    margin-top: 5px; /* 必要に応じて調整 */
+    font-size: 12px;
+    text-align: left; /* エラーメッセージのテキストを左揃えに */
+    width: 100%;
+    top: 17%;
+    font-weight: bold;
+}
+
+.statusInput .Email-error-message {
+    color: rgba(255, 0, 0, 0.800);
+    margin-top: 5px; /* 必要に応じて調整 */
+    font-size: 12px;
+    text-align: left; /* エラーメッセージのテキストを左揃えに */
+    width: 100%;
+    top: 43%;
+    font-weight: bold;
+}
+
+.statusInput .comment-error-message {
+    color: rgba(255, 0, 0, 0.800);
+    margin-top: 5px; /* 必要に応じて調整 */
+    font-size: 12px;
+    text-align: bottom; /* エラーメッセージのテキストを左揃えに */
+    width: 100%;
+    top: 78%;
+    font-weight: bold;
+}
+
+
+.send button {
+    background-color: rgb(237, 237, 237);
+    color: #00000095;
+    padding: 10px 20px;
+    border: none;
+    font-family: "Arial", "メイリオ";
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.send button:hover {
+    background-color: #d3d3d3; /* ホバー時の背景色を変更 */
+    font-weight: bold;
+    /* その他のホバー時のスタイル変更 */
+}
+
+.send button:active {
+    transform: scale(0.98); /* ボタンをわずかに縮小 */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); /* 影の変更 */
+    color: aliceblue;
+}
+
+.send button {
+    transition: all 0.3s ease; /* トランジションの適用 */
 }

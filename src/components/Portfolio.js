@@ -4,7 +4,7 @@ import './Portfolio.css';
 
 const Portfolio = () => {
     return(
-        <div className="portfolio">
+        <div id="portfolio" className="portfolio">
             <img src="壁紙.jpg" alt="壁紙"/>
             <h2>
                 WORK

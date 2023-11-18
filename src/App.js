@@ -7,6 +7,7 @@ import Profile from './components/Profile';
 import Portfolio from './components/Portfolio';
 import Skill from './components/Skill';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Portfolio />
       <Skill />
       <Contact />
+      <Footer />
     </div>
   );
 }

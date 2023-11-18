@@ -19,7 +19,7 @@ const Top = () => {
     },[]);
 
     return(
-        <div className="topcontainer">
+        <div id="toppage" className="topcontainer">
             <div className="sky">
                 <img src="バック.jpg" alt="背景" className="backboard"/>
                 <img src="メインキャラ背景透過（キャラのみ）.png" alt="icon" className="icon"/>

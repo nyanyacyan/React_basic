@@ -5,14 +5,11 @@ import './Contact.css';
 // userは格納するための箱みたいなもの
 // ユーザーがフォームを入力するたびにhandleUser関数が呼び出され、userオブジェクトの対応するフィールドが新しい値で更新
 const Contact = () => {
-    const [user, setUser] = useState({
-        name:"",
-        Email:"",
-        Comment:"",
-    });
+    const [user, setUser] = useState({name:"", Email:"", Comment:"",});
+    const [errors, setErrors] = useState({ name: "", Email: "", Comment: "" });
 
     const handleUser = (e) => {
-        setUser((prev) => ({...prev, [e.target.name]: e.target.value}));
+        setUser(({...user, [e.target.name]: e.target.value}));
         // prevは直前の状態のものを指す。つまり現在のuser（それぞれが空）の状態を指す
         // {...prev}は現在のuserオブジェクトのコピーを作成している。
         // [e.target.name]は'name''Email''Comment'を指している
@@ -21,7 +18,19 @@ const Contact = () => {
         // nameとは「name属性」のことを指す属性は「useState」にて定義する→関数を呼び出す側で「name属性」を指定する
     };
 
+    const validateFields = () => {
+        const newErrors = {};
+        if(!user.name) newErrors.name = "※ 名前の入力は必須です。";
+        if(!user.Email) newErrors.Email = "※ Emailの入力は必須です。";
+        if(!user.Comment) newErrors.Comment = "※ コメントの入力は必須です。";
+        setErrors(newErrors);
+
+        // エラーがあればtrueを返す
+        return Object.keys(newErrors).length > 0;
+    }
+
     const emailSend = () => {
+        if (validateFields()) return; // バリデーションチェック
         console.log('ただいま、メールを送信してます', user);
     
         fetch('http://localhost:5000/send-email', {
@@ -49,7 +58,7 @@ const Contact = () => {
     }
 
     return(
-        <div className="Contact">
+        <div id="contact" className="Contact">
             <div className="base">
                 <img src="壁紙.jpg" alt="壁紙"/>
                 <h2>
@@ -64,38 +73,42 @@ const Contact = () => {
                         <input 
                             name="name"
                             // この属性を指定してる。
+                            value={user.name} 
                             onChange={handleUser}
                             // ユーザーがフォーム要素の内容を変更するとonChangeイベントがトリガー
                             type="text"
                             placeholder="name"
                         />
+                        {errors.name && <p className="name-error-message">{errors.name}</p>}
                     </div>
 
                     <div className="EmailInput">
                         <input 
                             name="Email"
+                            value={user.Email} 
                             onChange={handleUser}
                             // ユーザーがフォーム要素の内容を変更するとonChangeイベントがトリガー
                             type="text"
                             placeholder="Email"
                             color="glay"
                         />
+                        {errors.Email && <p className="Email-error-message">{errors.Email}</p>}
                     </div>
 
                     <div className="comment">
                         <textarea 
                             name="Comment"
                             className="commentrow"
-                            rows="4"
                             placeholder="comment"
-                            value{...user.Comment}
+                            value={user.Comment} 
                             onChange={handleUser}
                             // ユーザーがフォーム要素の内容を変更するとonChangeイベントがトリガー
                         ></textarea>
+                        {errors.Comment && <p className="comment-error-message">{errors.Comment}</p>}
                     </div>
 
                     <div className="send">
-                        <button onclick={emailSend}>送信</button>
+                        <button onClick={emailSend}>SEND</button>
                     </div>
                 </div>
             </div>
