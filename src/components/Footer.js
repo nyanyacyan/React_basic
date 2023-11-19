@@ -12,7 +12,7 @@ const Footer = () => {
                 ©︎2023 nyanyacyan
             </p>
             <div className="topReverse">
-                <a href="#toppage" class="arrow-up"></a>
+                <a href="#toppage" class="arrow-up" aria-label="トップページに戻る"></a>
             </div>
         </div>
     );

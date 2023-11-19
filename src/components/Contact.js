@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import './Contact.css';
 import ContactModal from './ContactModal';
+import LoadingModal from './LoadingModal';
+import SuccessModal from './SuccessModal';
 
 // userは格納するための箱みたいなもの
 // ユーザーがフォームを入力するたびにhandleUser関数が呼び出され、userオブジェクトの対応するフィールドが新しい値で更新
@@ -10,7 +12,7 @@ const Contact = () => {
     const [errors, setErrors] = useState({ name: "", Email: "", Comment: "" });
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-    const [successMessage, setSuccessMessage] = useState("");
+    const [isSuccess, setIsSuccess] = useState(false);
 
     const handleUser = (e) => {
         setUser(({...user, [e.target.name]: e.target.value}));
@@ -38,9 +40,9 @@ const Contact = () => {
         setIsModalOpen(true);
     };
 
-    const handleCloseModal = () => {
-        setIsModalOpen(false);
-    };
+    // const handleCloseModal = () => {
+    //     setIsModalOpen(false);
+    // };
 
 
     const emailSend = () => {
@@ -69,9 +71,7 @@ const Contact = () => {
             // .thenは成功した時の処理を示す場合に使う。
             console.log('Success:', data);
             setIsLoading(false);
-            setSuccessMessage("メール送信が完了しました。");
-            // ここでモーダルを閉じる
-            handleCloseModal();
+            setIsSuccess(true);
         })
         .catch((error) => {
             // .catchは失敗の時の処理を示す場合に使う。
@@ -144,6 +144,9 @@ const Contact = () => {
                 formData={user}
                 onSubmit={emailSend}
             />
+
+            <LoadingModal isOpen={isLoading} />
+            <SuccessModal isOpen={isSuccess} onClose={() => setIsSuccess(false)} />
         </div>
     );
 };
