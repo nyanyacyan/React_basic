@@ -21,6 +21,7 @@
 
 .modal-content .modalH2 {
     color: #00000095;
+    font-family: "Arial", "メイリオ";
     top: 6%;
 }
 
@@ -30,6 +31,7 @@
 
 .modal-content .modalName {
     color: #00000095;
+    font-family: "Arial", "メイリオ";
     font-size: 16px;
     font-weight: bold;
     border-bottom: 2px solid;
@@ -39,6 +41,7 @@
 
 .modal-content .modalEmail {
     color: #00000095;
+    font-family: "Arial", "メイリオ";
     font-size: 16px;
     font-weight: bold;
     border-bottom: 2px solid;
@@ -48,6 +51,7 @@
 
 .modal-content .modalcomment {
     color: #00000095;
+    font-family: "Arial", "メイリオ";
     font-size: 16px;
     font-weight: bold;
     border-bottom: 2px solid;
@@ -58,6 +62,7 @@
 .modal-content .modalOnSubmit {
     position: absolute;
     color: #00000095;
+    font-family: "Arial", "メイリオ";
     font-size: 16px;
     font-weight: bold;
     border-bottom: 2px solid;
@@ -74,6 +79,7 @@
 .modal-content .modalOnClose {
     position: absolute;
     color: #00000095;
+    font-family: "Arial", "メイリオ";
     font-size: 16px;
     font-weight: bold;
     border-bottom: 2px solid;
@@ -85,4 +91,73 @@
     top: 90%;
     left: 65%;
     transform: translate(-50%, -50%);
+}
+
+.modal-content .confirm {
+    color: #00000095;
+    font-family: "Arial", "メイリオ";
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content .modalOnSubmit {
+    background-color: white;
+    color: #00000095;
+    padding: 10px 20px;
+    border: none;
+    font-family: "Arial", "メイリオ";
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .modalOnSubmit:hover {
+    background-color: rgba(173, 216, 230, 0.798); /* ホバー時の背景色を変更 */
+    color: white;
+    font-weight: bold;
+    /* その他のホバー時のスタイル変更 */
+}
+
+.modal-content .modalOnSubmit:active {
+    transform: scale(0.90); /* ボタンをわずかに縮小 */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); /* 影の変更 */
+    color: aliceblue;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content .modalOnSubmit {
+    transition: all 0.3s ease; /* トランジションの適用 */
+}
+
+.modal-content .modalOnClose {
+    background-color: white;
+    color: #00000095;
+    padding: 10px 20px;
+    border: none;
+    font-family: "Arial", "メイリオ";
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .modalOnClose:hover {
+    background-color: rgba(230, 173, 215, 0.798); /* ホバー時の背景色を変更 */
+    color: white;
+    font-weight: bold;
+    /* その他のホバー時のスタイル変更 */
+}
+
+.modal-content .modalOnClose:active {
+    transform: scale(0.90); /* ボタンをわずかに縮小 */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); /* 影の変更 */
+    color: aliceblue;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content .modalOnClose {
+    transition: all 0.3s ease; /* トランジションの適用 */
 }

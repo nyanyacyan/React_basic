@@ -9,6 +9,8 @@ const Contact = () => {
     const [user, setUser] = useState({name:"", Email:"", Comment:""});
     const [errors, setErrors] = useState({ name: "", Email: "", Comment: "" });
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [successMessage, setSuccessMessage] = useState("");
 
     const handleUser = (e) => {
         setUser(({...user, [e.target.name]: e.target.value}));
@@ -44,6 +46,10 @@ const Contact = () => {
     const emailSend = () => {
         if (validateFields()) return; // バリデーションチェック
         console.log('ただいま、メールを送信してます', user);
+        setIsModalOpen(false);
+
+        // ローディング状態にする
+        setIsLoading(true);
     
         fetch('http://localhost:5000/send-email', {
             // あなたのバックエンドのURLに置き換えてください
@@ -62,9 +68,14 @@ const Contact = () => {
         .then(data => {
             // .thenは成功した時の処理を示す場合に使う。
             console.log('Success:', data);
+            setIsLoading(false);
+            setSuccessMessage("メール送信が完了しました。");
+            // ここでモーダルを閉じる
+            handleCloseModal();
         })
         .catch((error) => {
             // .catchは失敗の時の処理を示す場合に使う。
+            setIsLoading(false);
             console.error('Error:', error);
         });
     }
