@@ -1,7 +1,7 @@
 /* Skill.css */
 .Skill {
     position: relative;
-    height: 100vh;
+    height: 200vh;
 }
 
 
@@ -10,7 +10,7 @@
     font-size: 24px;
     font-family: "Arial", "メイリオ";
     color: #00000095;
-    top: 12%; /* 要素の中央に配置 */
+    top: 5%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
     z-index: 10; 
@@ -23,9 +23,72 @@
     font-size: 16px;
     font-family: "Arial", "メイリオ";
     color: #00000095;
-    top: 28%; /* 要素の中央に配置 */
+    top: 13%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
     z-index: 10; 
     line-height: 1.8;
+}
+
+.Skill .radarChart1 {
+    position: absolute;
+    width: 450px;
+    top: 35%; /* 要素の中央に配置 */
+    left: 50%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+}
+
+.Skill .radarChart2 {
+    position: absolute;
+    width: 400px;
+    top: 76%; /* 要素の中央に配置 */
+    left: 50%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+}
+
+.Skill .levelList1 {
+    position: absolute;
+    width: 150px;
+    top: 90%; /* 要素の中央に配置 */
+    left: 20%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+}
+
+.Skill .grid-container1 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 480px;
+    margin: auto;
+    top: 52.5%; /* 要素の中央に配置 */
+    left: 50%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+}
+
+.Skill .grid-container2 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 480px;
+    margin: auto;
+    top: 93%; /* 要素の中央に配置 */
+    left: 50%; /* 要素の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央からのずれを修正 */
+}
+
+.level-list {
+    list-style: none;
+    border: 1px solid;
+    text-align: left;
+    padding: 10px;
+}
+
+.level-list li {
+    font-size: 14px;
+    font-family: "Arial", "メイリオ";
+    color: #00000095;
+    background-color: #fbfbfb; /* 背景色 */
+    padding: 3px; /* パディング */
 }

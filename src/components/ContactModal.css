@@ -1,0 +1,88 @@
+/* ContactModal.css */
+
+.modal {
+    /* モーダルの基本スタイル */
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 600px;
+    background-color: rgba(248, 243, 243, 0.9);
+    z-index: 1000;
+    border: 2px solid;
+    transform: translate(-50%, -50%);
+    /* その他のスタイル */
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal-content .modalH2 {
+    color: #00000095;
+    top: 6%;
+}
+
+.modal-content{
+    background-color: aliceblue;
+}
+
+.modal-content .modalName {
+    color: #00000095;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    top: 24%;
+    left: 50%;
+}
+
+.modal-content .modalEmail {
+    color: #00000095;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    top: 36%;
+    left: 50%;
+}
+
+.modal-content .modalcomment {
+    color: #00000095;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    top: 48%;
+    left: 50%;
+}
+
+.modal-content .modalOnSubmit {
+    position: absolute;
+    color: #00000095;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: none;
+    top: 90%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content .modalOnClose {
+    position: absolute;
+    color: #00000095;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: none;
+    top: 90%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}

@@ -17,11 +17,11 @@ const Profile = () => {
                 </p>
             </div>
 
-            <div className="github">
+            <div className="github-container">
                 <a href="https://github.com/nyanyacyan" target="_blank" className="">GitHub</a>
             </div>
 
-            <div className="qiita">
+            <div className="qiita-container">
                 <a href="https://qiita.com/nyanyacyan" target="_blank" className="qiita">Qiita</a>
             </div>
 

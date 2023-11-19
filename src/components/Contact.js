@@ -1,12 +1,14 @@
 // Contact.js
 import React, { useState } from "react";
 import './Contact.css';
+import ContactModal from './ContactModal';
 
 // userは格納するための箱みたいなもの
 // ユーザーがフォームを入力するたびにhandleUser関数が呼び出され、userオブジェクトの対応するフィールドが新しい値で更新
 const Contact = () => {
-    const [user, setUser] = useState({name:"", Email:"", Comment:"",});
+    const [user, setUser] = useState({name:"", Email:"", Comment:""});
     const [errors, setErrors] = useState({ name: "", Email: "", Comment: "" });
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleUser = (e) => {
         setUser(({...user, [e.target.name]: e.target.value}));
@@ -27,7 +29,17 @@ const Contact = () => {
 
         // エラーがあればtrueを返す
         return Object.keys(newErrors).length > 0;
-    }
+    };
+
+    const handleOpenModal = () => {
+        if(validateFields()) return;
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+
 
     const emailSend = () => {
         if (validateFields()) return; // バリデーションチェック
@@ -56,6 +68,9 @@ const Contact = () => {
             console.error('Error:', error);
         });
     }
+
+
+
 
     return(
         <div id="contact" className="Contact">
@@ -108,10 +123,16 @@ const Contact = () => {
                     </div>
 
                     <div className="send">
-                        <button onClick={emailSend}>SEND</button>
+                        <button onClick={handleOpenModal}>送信内容を確認</button>
                     </div>
                 </div>
             </div>
+            <ContactModal 
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                formData={user}
+                onSubmit={emailSend}
+            />
         </div>
     );
 };
