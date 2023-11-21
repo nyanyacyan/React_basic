@@ -58,6 +58,8 @@ const Contact = () => {
             // あなたのバックエンドのURLに置き換えてください
             // サーバーのURLに対して「/send-email」を加えて記載する→これによりサーバーが動く
             // httpリクエスト先を指定
+            // 'https://portfoliosite-405309.an.r.appspot.com/send-email'
+            // http://localhost:8000/send-email
             method: 'POST',
             // HTTP リクエストのメソッド
             headers: {

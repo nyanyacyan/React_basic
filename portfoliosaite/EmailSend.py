@@ -38,24 +38,25 @@ def send_email():
     # text形式、html形式どちらも作成して送付するのが一般的
 
     text = f"""\
-    新しいお問い合わせがありました。
 
-    名前: 
-    {name}
+    名前:{name}
 
-    Email:
-    {email}
+    Email:{email}
 
-    コメント:
-    {comment}
+    コメント:{comment}
     """
     html = f"""\
     <html>
     <body>
-        <p>名前: {name}<br>
-        Email: {email}<br>
+        新しいお問い合わせがありました。
+        <p>名前:<br>
+        {name}<br><br>
+
+        Email:<br> 
+        {email}<br><br>
+
         コメント:<br>
-        {comment}</p>
+        {comment}<br></p>
     </body>
     </html>
     """
@@ -87,4 +88,7 @@ def send_email():
     return jsonify({'message': 'メール送信完了'})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=True)
+
+    # app.run(debug=True, port=8000)
+    # gcloud app deploy
