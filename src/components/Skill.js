@@ -13,7 +13,7 @@ const Skill = () => {
             </p>
 
             <div>
-                <img src="言語レーダーチャート.jpeg" alt="言語レーダーチャート" className="radarChart1"/>
+                <img src="radarChart1.png" alt="radarChart1" className="radarChart1"/>
             </div>
 
             <div className="grid-container1">
@@ -27,7 +27,7 @@ const Skill = () => {
             </div>
 
             <div>
-                <img src="OPレーダーチャート.jpeg" alt="言語レーダーチャート" className="radarChart2"/>
+                <img src="radarChart2.png" alt="radarChart2" className="radarChart2"/>
             </div>
 
             <div className="grid-container2">
