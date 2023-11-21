@@ -1,16 +1,20 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-app = Flask(__name__)
-# Flaskを使うための宣言（初期化）
+app = Flask(__name__)  # Flaskを使うための宣言（初期化）
+CORS(app)
+
 
 @app.route('/send-email', methods=['POST'])
 # Flaskにおけるルーティングの宣言
 
 def send_email():
     data = request.json
+    print("受信データ:", data)
+    print("リクエスト受信")
     # リクエストボディに含まれるJSONデータを自動的にPythonの辞書形式に変換
 
     name = data.get('name')
@@ -20,7 +24,7 @@ def send_email():
     # 送信先のメールアドレスはそれ専用を作成した方がいい
     sender_email = "nyanyachan.portfolio@gmail.com"
     receiver_email = "nyanyacyan@gmail.com"
-    password = "syusyu39"
+    password = "fumg zreo pgka jxka"
 
     # ここで示したmessageがメール全体を表す。
     message = MIMEMultipart("alternative")
@@ -34,8 +38,14 @@ def send_email():
     # text形式、html形式どちらも作成して送付するのが一般的
 
     text = f"""\
-    名前: {name}
-    Email: {email}
+    新しいお問い合わせがありました。
+    
+    名前: 
+    {name}
+
+    Email:
+    {email}
+
     コメント:
     {comment}
     """

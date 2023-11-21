@@ -52,8 +52,9 @@ const Contact = () => {
 
         // ローディング状態にする
         setIsLoading(true);
-    
-        fetch('http://localhost:5000/send-email', {
+
+        console.log('Sending:', user);  
+        fetch('https://portfoliosite-405309.an.r.appspot.com/send-email', {
             // あなたのバックエンドのURLに置き換えてください
             // サーバーのURLに対して「/send-email」を加えて記載する→これによりサーバーが動く
             // httpリクエスト先を指定
@@ -68,15 +69,16 @@ const Contact = () => {
         })
         .then(response => response.json())
         .then(data => {
+            console.log('Received:', data); 
             // .thenは成功した時の処理を示す場合に使う。
             console.log('Success:', data);
             setIsLoading(false);
             setIsSuccess(true);
         })
         .catch((error) => {
+            console.error('Request failed:', error);
             // .catchは失敗の時の処理を示す場合に使う。
             setIsLoading(false);
-            console.error('Error:', error);
         });
     }
 
@@ -98,6 +100,7 @@ const Contact = () => {
                     <div className="nameInput">
                         <input 
                             name="name"
+                            autoComplete="name"
                             // この属性を指定してる。
                             value={user.name} 
                             onChange={handleUser}
@@ -111,6 +114,7 @@ const Contact = () => {
                     <div className="EmailInput">
                         <input 
                             name="Email"
+                            autoComplete="email"
                             value={user.Email} 
                             onChange={handleUser}
                             // ユーザーがフォーム要素の内容を変更するとonChangeイベントがトリガー
@@ -124,6 +128,7 @@ const Contact = () => {
                     <div className="comment">
                         <textarea 
                             name="Comment"
+                            autoComplete="off"
                             className="commentrow"
                             placeholder="comment"
                             value={user.Comment} 

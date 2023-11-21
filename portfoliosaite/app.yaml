@@ -1,0 +1,2 @@
+runtime: python38  # 使用するPythonのバージョン
+entrypoint: gunicorn -b :$PORT EmailSend:app  # アプリケーションの起動コマンド
