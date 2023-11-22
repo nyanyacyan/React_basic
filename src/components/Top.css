@@ -27,7 +27,8 @@
 
 .sky h1 {
     position: absolute;
-    font-size: 24px;
+    font-size: 26px;
+    width: 100%;
     font-family: "Arial", "メイリオ";
     color: #00000095;
     top: 25%; /* 要素の中央に配置 */

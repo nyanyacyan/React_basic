@@ -7,7 +7,8 @@
 
 .Skill h2 {
     position: absolute;
-    font-size: 24px;
+    font-size: 26px;
+    width: 100%;
     font-family: "Arial", "メイリオ";
     color: #00000095;
     top: 5%; /* 要素の中央に配置 */
@@ -32,7 +33,7 @@
 
 .Skill .radarChart1 {
     position: absolute;
-    width: 100%;
+    width: 80%;
     top: 35%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
@@ -86,7 +87,7 @@
     border: 1px solid;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 60%;
     text-align: left;
 }
 
