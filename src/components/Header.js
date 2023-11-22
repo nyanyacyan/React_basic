@@ -40,8 +40,8 @@ const Header = () => {
                 <li><a href="#toppage" onClick={handleLinkClick}>トップ</a></li>
                 <li><a href="#about" onClick={handleLinkClick}>このサイトについて</a></li>
                 <li><a href="#profile" onClick={handleLinkClick}>プロフィール</a></li>
-                <li><a href="#skills" onClick={handleLinkClick}>スキル</a></li>
                 <li><a href="#portfolio" onClick={handleLinkClick}>ポートフォリオ</a></li>
+                <li><a href="#skills" onClick={handleLinkClick}>スキル</a></li>
                 <li><a href="#contact" onClick={handleLinkClick}>連絡先</a></li>
                 {/* <li><a href="#language">English</a></li> */}
             </ul>
