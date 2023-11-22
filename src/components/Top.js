@@ -9,7 +9,7 @@ const Top = () => {
                 <img src="backboard.png" alt="backboard" className="backboard"/>
                 <img src="メインキャラ背景透過（キャラのみ）.png" alt="icon" className="icon"/>
                 <h1>
-                    にゃにゃちゃん's　Lab
+                    にゃにゃちゃん's<br />Lab
                 </h1>
             </div>
         </div>
