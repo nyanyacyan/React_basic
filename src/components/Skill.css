@@ -73,7 +73,8 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     width: 100%;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     top: 93%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
@@ -94,5 +95,6 @@
     font-family: "Arial", "メイリオ";
     color: #00000095;
     background-color: #fbfbfb; /* 背景色 */
-    padding: 0; /* パディング */
+    margin: 0;
+    padding: 0;
 }
