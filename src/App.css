@@ -16,7 +16,8 @@
 @media screen and (max-width: 768px) {
   .App {
     /* スマートフォン向けのスタイル */
-    width: 100%
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
