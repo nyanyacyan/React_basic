@@ -18,11 +18,11 @@ const Skill = () => {
 
             <div className="grid-container1">
                 <ul className="level-list">
-                    <li>5 Level - 実務を10以上</li>
-                    <li>4 Level - 実務を5以上</li>
-                    <li>3 Level - 業務として実践</li>
-                    <li>2 Level - コードを書いて実装</li>
-                    <li>1 Level - 知識補填</li>
+                    <li>  5 Level - 実務を10以上</li>
+                    <li>  4 Level - 実務を5以上</li>
+                    <li>  3 Level - 業務として実践</li>
+                    <li>  2 Level - コードを書いて実装</li>
+                    <li>  1 Level - 知識補填</li>
                 </ul>
             </div>
 
