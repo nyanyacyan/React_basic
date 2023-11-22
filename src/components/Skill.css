@@ -82,6 +82,8 @@
 .level-list {
     list-style: none;
     border: 1px solid;
+    margin: 0;
+    padding: 0;
     width: 100%;
     text-align: left;
     padding: 10px;
@@ -92,5 +94,5 @@
     font-family: "Arial", "メイリオ";
     color: #00000095;
     background-color: #fbfbfb; /* 背景色 */
-    padding: 3px; /* パディング */
+    padding: 0; /* パディング */
 }
