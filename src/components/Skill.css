@@ -34,15 +34,15 @@
 .Skill .radarChart1 {
     position: absolute;
     width: 90%;
-    top: 35%; /* 要素の中央に配置 */
-    left: 50%; /* 要素の中央に配置 */
+    top: 30%; /* 要素の中央に配置 */
+    left: 49%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
 }
 
 .Skill .radarChart2 {
     position: absolute;
     width: 90%;
-    top: 76%; /* 要素の中央に配置 */
+    top: 70%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
 }
@@ -63,7 +63,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    top: 52.5%; /* 要素の中央に配置 */
+    top: 47%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
 }
@@ -76,7 +76,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    top: 93%; /* 要素の中央に配置 */
+    top: 83%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
 }
