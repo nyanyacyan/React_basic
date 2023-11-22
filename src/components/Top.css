@@ -20,7 +20,7 @@
     max-width: 200px;
     width: 50%;
     z-index: 100;
-    top: 80%; /* 要素の中央に配置 */
+    top: 85%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
 }
