@@ -32,7 +32,7 @@
 
 .Skill .radarChart1 {
     position: absolute;
-    width: 450px;
+    width: 100%;
     top: 35%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
@@ -40,7 +40,7 @@
 
 .Skill .radarChart2 {
     position: absolute;
-    width: 400px;
+    width: 100%;
     top: 76%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
@@ -81,6 +81,7 @@
 .level-list {
     list-style: none;
     border: 1px solid;
+    width: 100%;
     text-align: left;
     padding: 10px;
 }
