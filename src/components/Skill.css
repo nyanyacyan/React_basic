@@ -59,7 +59,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
-    width: 480px;
+    width: 100%;
     margin: auto;
     top: 52.5%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
@@ -71,7 +71,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
-    width: 480px;
+    width: 100%;
     margin: auto;
     top: 93%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
