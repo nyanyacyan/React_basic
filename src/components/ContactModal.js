@@ -12,7 +12,7 @@ const ContactModal = ({ isOpen, onClose, formData, onSubmit}) => {
                 <p className="modalName">名前: {formData.name}</p>
                 <p className="modalEmail">Email: {formData.Email}</p>
                 <p className="modalcomment">コメント: {formData.Comment}</p>
-                <p className="confirm">こちらの内容でお間違いないでしょうか？</p>
+                <p className="confirm">こちらの内容で<br />お間違いないでしょうか？</p>
 
                 <button onClick={onSubmit} className="modalOnSubmit">送信する</button>
                 <button onClick={onClose} className="modalOnClose">修正する</button>
