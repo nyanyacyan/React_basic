@@ -60,7 +60,8 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     width: 100%;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     top: 52.5%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
