@@ -1,11 +1,15 @@
 /* Contact.css */
 .Contact {
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .Contact img {
     width: 100%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .Contact h2 {
