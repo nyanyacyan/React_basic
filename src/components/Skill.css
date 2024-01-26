@@ -102,3 +102,13 @@
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
+@media screen and (max-width: 600px) {
+    .Skill .grid-container1 {
+        width: 50%;
+    }
+
+    .Skill .grid-container2 {
+        width: 50%;
+    }
+}
