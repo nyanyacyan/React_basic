@@ -21,14 +21,14 @@
     max-width: 200px;
     width: 50%;
     z-index: 100;
-    top: 85%; /* 要素の中央に配置 */
+    top: 75%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
 }
 
 .sky h1 {
     position: absolute;
-    font-size: 26px;
+    font-size: 32px;
     width: 100%;
     font-family: "Arial", "メイリオ";
     color: #00000095;
@@ -36,4 +36,20 @@
     left: 50%; /* 要素の中央に配置 */
     transform: translate(-50%, -50%); /* 中央からのずれを修正 */
     z-index: 10; 
+}
+
+
+@media screen and (max-width: 600px) {
+    .backboard{
+        height: 50vh;
+    }
+
+    .icon {
+        max-width: 100px;
+        width: 30%;
+        top: 70%;
+    }
+    .sky h1 {
+        font-size: 16px;
+    }
 }

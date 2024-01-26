@@ -7,7 +7,7 @@ const Top = () => {
         <div id="toppage" className="topcontainer">
             <div className="sky">
                 <img src="backboard.png" alt="backboard" className="backboard"/>
-                <img src="メインキャラ背景透過（キャラのみ）.png" alt="icon" className="icon"/>
+                <img src="newimage.png" alt="icon" className="icon"/>
                 <h1>
                     にゃにゃちゃん's<br />Lab
                 </h1>
