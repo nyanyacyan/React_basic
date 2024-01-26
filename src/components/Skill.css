@@ -33,7 +33,7 @@
 
 .Skill .radarChart1 {
     position: absolute;
-    max-width: 400px;
+    max-width: 320px;
     width: 90%;
     top: 35%; /* 要素の中央に配置 */
     left: 49.5%; /* 要素の中央に配置 */
@@ -42,7 +42,7 @@
 
 .Skill .radarChart2 {
     position: absolute;
-    max-width: 400px;
+    max-width: 320px;
     width: 90%;
     top: 73%; /* 要素の中央に配置 */
     left: 50%; /* 要素の中央に配置 */
