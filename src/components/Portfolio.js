@@ -10,28 +10,38 @@ const Portfolio = () => {
                 WORK
             </h2>
             <p className="portfolio1">
-                ① <b>html生成アプリ</b><br />ブログのフォーマットからCSVファイルからデータを抽出して一括で入れ替えられるWEBアプリケーション。
+            ① <b>AWSによる24時間監視ツール</b> - クラウド環境で安心の監視システム<br />
+            クラウド環境の構築。特定のサイトを10分ごとにチェックし、新商品や新しい記事の情報を素早く取得。<br />
+            （AWS Lambda、S3、API Gateway、AWS Cloud Shell、IAM、Step Function、EC2、CloudWatch）
             </p>
             <p className="portfolio2">
-                ② <b>仮想通貨サイト スクレイピング</b><br />毎日、定時に特定のデータをスプレッドシートに追記していくシステムを構築。
+                ② <b>自動ログイン・再出品ツール</b> - ログイン自動化と販売促進<br />
+                サイトログインの自動化システム構築。<br />「reCAPTCHAあり」のサイトも可能です。<i>※全てのサイトに対応しているわけではありません。</i><br />
+                ECサイトなどで販売促進のお手伝いをさせていただきます。
             </p>
             <p className="portfolio3">
-                ③ <b>にゃにゃちゃん’s Lab</b><br />Reactを活用したWEBサイトを作成。
+                ③ <b>youtube文字起こし（翻訳機能付き）アプリ</b> - 高精度な文字起こしと翻訳<br />
+                「whisper」と「Chat GPT」を使った動画や音声データの翻訳ツール。高精度で文字起こしを提供。
             </p>
             <p className="portfolio4">
-                ④ <b>AWSによるクラウドシステム</b><br />クラウド環境の構築。<br />（AWS Lambda、S3、API Gateway、AWS Cloud Shell、IAM、Step Function）
+                ④ <b>GoogleマップAPIを使って情報取得</b> - 地図情報を簡単に抽出<br />
+                Googleマップのレビューや写真、位置情報などを抽出し、情報収集や販売促進に利用可能。ブログなど（WordPress）に使えるようにhtml生成も可能。
             </p>
             <p className="portfolio5">
-                ⑤ <b>自動ログインシステム構築</b><br />サイトログインの自動化システム構築。「reCHAPTCHAあり」のサイトも可能にしました。
+                ⑤ <b>仮想通貨サイト スクレイピング</b> - 仮想通貨データの自動収集<br />
+                毎日、定時に特定のデータをスプレッドシートに追記していくシステムを構築。
             </p>
             <p className="portfolio6">
-                ⑥ <b>LINE 通知機能システム構築</b><br />システムに「LINE」通知（画像添付含む）を組み込むシステムを構築。
+                ⑥ <b>通知機能システム構築</b> - いつでもどこでも情報をキャッチ<br />
+                システムにLINE、ChatWork、Slackによる通知（画像添付含む）を組み込むシステムを構築。
             </p>
             <p className="portfolio7">
-                ⑦ <b>ChatWork 通知機能システム構築</b><br />システムに「ChatWork」による通知（画像添付含む）を組み込むシステムを構築。
+                ⑦ <b>html生成アプリ</b> - ブログ運営の効率化<br />
+                ブログのフォーマットからCSVファイルからデータを抽出して一括で入れ替えられるWEBアプリケーション。
             </p>
             <p className="portfolio8">
-                ⑧ <b>Slack 通知機能システム構築</b><br />システムに「Slack」による通知（画像添付含む）を組み込むシステムを構築。
+                ⑧ <b>にゃにゃちゃん’s Lab</b> - Reactで作る楽しいWEBサイト<br />
+                Reactを活用したWEBサイトを作成。
             </p>
         </div>
     );
